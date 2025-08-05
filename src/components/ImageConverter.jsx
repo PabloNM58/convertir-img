@@ -103,7 +103,7 @@ const ImageConverter = () => {
           marginBottom: "1rem",
         }}
       >
-        📁 Elegir imágenes
+        Elegir imágenes
       </label>
       <input
         id="file-upload"
@@ -116,10 +116,18 @@ const ImageConverter = () => {
 
       {images.length > 0 && (
         <div style={{ marginTop: "1rem", marginBottom: "3rem" }}>
-          <button onClick={handleClearAll} style={{ marginRight: "1rem" }}>
-            🗑️ Eliminar todas
+          <button
+            onClick={handleClearAll}
+            style={{ marginRight: "1rem", backgroundColor: "#e61919" }}
+          >
+            Eliminar todas
           </button>
-          <button onClick={handleConvert}>✅ Convertir a WebP</button>
+          <button
+            onClick={handleConvert}
+            style={{ marginRight: "1rem", backgroundColor: "#439b31ff" }}
+          >
+            Convertir a WebP
+          </button>
         </div>
       )}
 
